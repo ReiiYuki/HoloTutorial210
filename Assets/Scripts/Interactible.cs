@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using System.Collections.Generic;
 /// <summary>
 /// The Interactible class flags a Game Object as being "Interactible".
 /// Determines what happens when an Interactible is being gazed at.
@@ -10,11 +10,16 @@ public class Interactible : MonoBehaviour
     public AudioClip TargetFeedbackSound;
     private AudioSource audioSource;
 
-    private Material[] defaultMaterials;
+    private List<Material> defaultMaterials;
 
     void Start()
     {
-        defaultMaterials = GetComponent<Renderer>().materials;
+        defaultMaterials = new List<Material>();
+        foreach (Renderer r in GetComponentsInChildren<Renderer>())
+        {
+            defaultMaterials.Add(r.material);
+        }
+        //defaultMaterials = GetComponent<Renderer>().materials;
 
         // Add a BoxCollider if the interactible does not contain one.
         Collider collider = GetComponentInChildren<Collider>();
@@ -48,7 +53,7 @@ public class Interactible : MonoBehaviour
 
     void GazeEntered()
     {
-        for (int i = 0; i < defaultMaterials.Length; i++)
+        for (int i = 0; i < defaultMaterials.Count; i++)
         {
             // 2.d: Uncomment the below line to highlight the material when gaze enters.
             defaultMaterials[i].SetFloat("_Highlight", .25f);
@@ -57,7 +62,7 @@ public class Interactible : MonoBehaviour
 
     void GazeExited()
     {
-        for (int i = 0; i < defaultMaterials.Length; i++)
+        for (int i = 0; i < defaultMaterials.Count; i++)
         {
             // 2.d: Uncomment the below line to remove highlight on material when gaze exits.
             defaultMaterials[i].SetFloat("_Highlight", 0f);
@@ -66,7 +71,7 @@ public class Interactible : MonoBehaviour
 
     void OnSelect()
     {
-        for (int i = 0; i < defaultMaterials.Length; i++)
+        for (int i = 0; i < defaultMaterials.Count; i++)
         {
             defaultMaterials[i].SetFloat("_Highlight", .5f);
         }

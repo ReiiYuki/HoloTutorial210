@@ -9,9 +9,9 @@ ModelExplorer.sln: modified
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 ModelExplorer\App.cs: 3C91688F763D4ACE0EE47104B0A490C6
-ModelExplorer\ModelExplorer.csproj: 7241901AA7724C73D705B257BE8DC86A
+ModelExplorer\ModelExplorer.csproj: A2BA5149727DD5376ED9477C8CAF7CC8
 ModelExplorer\ModelExplorer.csproj.user: modified
-ModelExplorer\Package.appxmanifest: FBB1F50D3C9693C2A2125D8CAC93ADC7
+ModelExplorer\Package.appxmanifest: C22B0DEF037E6669BA8AF093EF0E9869
 ModelExplorer\project.json: 1D02BC64BAC0D041019673A1C4C51737
 ModelExplorer\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
 ModelExplorer\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084

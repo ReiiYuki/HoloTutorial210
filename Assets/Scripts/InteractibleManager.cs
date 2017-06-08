@@ -62,7 +62,7 @@ public class InteractibleManager : Singleton<InteractibleManager>
             if (oldFocusedGameObject.GetComponent<Interactible>() != null)
             {
                 // 2.c: Send a GazeExited message to the oldFocusedGameObject.
-                FocusedGameObject.SendMessage("GazeExited");
+                oldFocusedGameObject.SendMessage("GazeExited");
             }
         }
     }

@@ -100,7 +100,7 @@ namespace Academy.HoloToolkit.Unity
                 // Save defaults ...
 
                 // 2.a: Assign Position to be gazeOrigin plus MaxGazeDistance times gazeDirection.
-                Position = gazeOrigin;
+                Position = gazeOrigin + (gazeDirection * MaxGazeDistance);
                 // 2.a: Assign Normal to be the user's gazeDirection.
                 Normal = gazeDirection;
             }
