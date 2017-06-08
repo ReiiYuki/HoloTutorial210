@@ -9,7 +9,7 @@ ModelExplorer.sln: modified
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 ModelExplorer\App.cs: 3C91688F763D4ACE0EE47104B0A490C6
-ModelExplorer\ModelExplorer.csproj: D38F3ABC76AD59FE806867F94CB6F597
+ModelExplorer\ModelExplorer.csproj: 3045896928D2F1BCC984F33FCCC9D3D6
 ModelExplorer\ModelExplorer.csproj.user: modified
 ModelExplorer\Package.appxmanifest: C22B0DEF037E6669BA8AF093EF0E9869
 ModelExplorer\project.json: 1D02BC64BAC0D041019673A1C4C51737
